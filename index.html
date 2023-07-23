@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lenskart</title>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <img class="logo" src="/Lenskart-Logo.png" alt="Lenskart-Logo">
+            <input type="text" placeholder="What are you looking for..">
+            <nav>
+                <a class="header-a" href=""> Track order</a>
+                <a class="header-a" href=""> Login / sign up</a>
+                <a class="header-a" href=""> wishList </a>
+                <a class="header-a" href=""> cart</a>
+            </nav>
+        </div>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="https://www.lenskart.com/eyeglasses.html" target="_blank">
+                    <img class="menu-image" src="eye glasses.jpg" alt="eye glasses">
+                    <button class="menu-btn">Eyeglasses</button>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://www.lenskart.com/sunglasses.html" target="_blank">
+                    <img class="menu-image" src="sun glasses.jpg" alt="eye glasses">
+                    <button class="menu-btn">Sunglasses</button>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://www.lenskart.com/eyeglasses/collections/all-computer-glasses.html" target="_blank">
+                    <img class="menu-image" src="computer glasses.jpg" alt="eye glasses">
+                    <button class="menu-btn">Computer Glasses</button>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="https://www.lenskart.com/contact-lenses.html" target="_blank">
+                    <img class="menu-image" src="contact_lenses-removebg-preview.png" alt="eye glasses"
+                        style="height: 180px;">
+                    <button class="menu-btn">Contact lenses</button>
+                </a>
+            </div>
+        </div>
+        <div class="banners">
+            <a href="https://www.lenskart.com/eyewear/promotion/extra-60-off-flash-sale.html" target="_blank">
+                <img class="banner" src="Lens kart - banner.png" alt="offers">
+            </a>
+            <a href="https://www.lenskart.com/eyeglasses/offer/eyeglasses.html" target="_blank">
+                <img class="banner" src="banner2.png" alt="offers">
+            </a>
+            <a href="https://www.lenskart.com/sunglasses-bogo" target="_blank">
+                <img class="banner" src="banner3.png" alt="offers">
+            </a>
+            <a href="https://www.lenskart.com/eyeglasses/brands/vincent-chase-eyeglasses/air-flex.html" target="_blank">
+                <img class="banner" src="banner4.png" alt="offers">
+            </a>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
+        <!-- <img class="assistant" src="assistant.png" alt=""> -->
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+</html>
